@@ -35,11 +35,11 @@ import java.time.LocalDateTime;
 public class JobLevel {
 
     @Id
-//    @Column(name = "id")
-    @Column(columnDefinition = "serial")
+
+//    @Column(columnDefinition = "serial")
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_level_seq")
-    @SequenceGenerator(name = "job_level_seq", sequenceName = "job_level_seq", initialValue = 100)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_level_id_seq")
+    @SequenceGenerator(name = "job_level_id_seq", sequenceName = "job_level_id_seq", allocationSize = 1)
     private Integer id;
 
     //    @EmbeddedId

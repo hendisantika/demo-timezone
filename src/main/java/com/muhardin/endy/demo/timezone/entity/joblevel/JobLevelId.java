@@ -31,24 +31,25 @@ public class JobLevelId implements Serializable {
 //    @GeneratedValue(strategy = GenerationType.UUID)
 //    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_level_seq")
 //    @SequenceGenerator(name = "job_level_seq", sequenceName = "job_level_seq", initialValue = 100)
+//    @Column(name = "id", insertable = false, updatable = false, nullable = true)
     private Integer id;
 
-    @NotNull
-    @Column(name = "jl_company_id", nullable = false)
+//    @NotNull
+//    @Column(name = "jl_company_id", nullable = false)
     private Integer companyId;
 
-    @NotNull
-    @Column(name = "jl_level_no", nullable = false)
+//    @NotNull
+//    @Column(name = "jl_level_no", nullable = false)
     private Integer levelNo;
 
-    @Size(max = 10)
-    @NotNull
-    @Column(name = "jl_job_id", nullable = false, length = 10)
+//    @Size(max = 10)
+//    @NotNull
+//    @Column(name = "jl_job_id", nullable = false, length = 10)
     private String jobId;
 
-    @Size(max = 10)
-    @NotNull
-    @Column(name = "jl_type", nullable = false, length = 10)
+//    @Size(max = 10)
+//    @NotNull
+//    @Column(name = "jl_type", nullable = false, length = 10)
     private String type;
 
     @Override

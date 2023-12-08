@@ -38,8 +38,8 @@ public class JobLevel {
 //    @Column(name = "id")
     @Column(columnDefinition = "serial")
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_level_seq")
-    @SequenceGenerator(name = "job_level_seq", sequenceName = "job_level_seq", initialValue = 100)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "job_level_generator")
+    @SequenceGenerator(name = "job_level_generator", sequenceName = "job_level_seq", allocationSize = 1, initialValue = 100)
     private Integer id;
 
     //    @EmbeddedId

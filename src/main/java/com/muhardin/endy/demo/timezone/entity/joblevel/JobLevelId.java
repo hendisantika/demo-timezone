@@ -1,9 +1,6 @@
 package com.muhardin.endy.demo.timezone.entity.joblevel;
 
-import jakarta.persistence.Column;
-import jakarta.validation.constraints.Size;
 import lombok.*;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -33,22 +30,22 @@ public class JobLevelId implements Serializable {
 //    @SequenceGenerator(name = "job_level_seq", sequenceName = "job_level_seq", initialValue = 100)
     private Integer id;
 
-    @NotNull
-    @Column(name = "jl_company_id", nullable = false)
+    //    @NotNull
+//    @Column(name = "jl_company_id", nullable = false)
     private Integer companyId;
 
-    @NotNull
-    @Column(name = "jl_level_no", nullable = false)
+    //    @NotNull
+//    @Column(name = "jl_level_no", nullable = false)
     private Integer levelNo;
 
-    @Size(max = 10)
-    @NotNull
-    @Column(name = "jl_job_id", nullable = false, length = 10)
+    //    @Size(max = 10)
+//    @NotNull
+//    @Column(name = "jl_job_id", nullable = false, length = 10)
     private String jobId;
 
-    @Size(max = 10)
-    @NotNull
-    @Column(name = "jl_type", nullable = false, length = 10)
+    //    @Size(max = 10)
+//    @NotNull
+//    @Column(name = "jl_type", nullable = false, length = 10)
     private String type;
 
     @Override

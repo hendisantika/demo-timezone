@@ -1,8 +1,8 @@
-CREATE SEQUENCE job_level_seq AS integer;
+CREATE SEQUENCE job_level_seq AS integer START 101;
 
 CREATE TABLE job_level
 (
-    id              serial      NOT NULL UNIQUE,
+    id serial4 NOT NULL UNIQUE,
     jl_company_id   int4        NOT NULL,
     jl_level_no     int         NOT NULL,
     jl_job_id       varchar(10) NOT NULL,
